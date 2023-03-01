@@ -1,0 +1,20 @@
+.swatch-wrapper {
+	height: 64px;
+	margin: 1px;
+	padding: 1px;
+	width: 64px;
+}
+
+.swatch-wrapper .selected {
+	border: solid 1px #000;
+}
+
+.swatch {
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+}
+
+.swatch:hover {
+	border-radius: 50%;
+}
