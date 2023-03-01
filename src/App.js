@@ -1,14 +1,22 @@
-import ProductCard from "./ProductCard";
+import MainContent from 'layout/MainContent';
+import ThinxHeading from 'layout/ThinxHeading';
+
+import ProductCard from 'components/ProductCard';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <div className="Product-Card-Wrapper">
-        <ProductCard />
-      </div>
-    </div>
-  );
-}
+const productItem = {
+	imgAltText: 'Alt text',
+	imgPath: 'imgPath',
+	productTitle: '',
+};
 
-export default App;
+export default function App() {
+	return (
+		<div className="App">
+			<ThinxHeading>Thinx Product Card</ThinxHeading>
+			<MainContent>
+				<ProductCard product={productItem} />
+			</MainContent>
+		</div>
+	);
+}
