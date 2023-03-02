@@ -2,6 +2,10 @@
 
 Built by Jared Hettinger for [Thinx](https://www.thinx.com/)
 
+A live version of this project can be viewed at: http://kafkaesc.github.io/product-card-challenge
+
+The full code for this project can be viewed at: https://github.com/kafkaesc/product-card-challenge/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Running this project
