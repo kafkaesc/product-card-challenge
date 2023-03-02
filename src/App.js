@@ -4,9 +4,10 @@ import ThinxHeading from 'layout/ThinxHeading';
 import ProductCard from 'components/ProductCard';
 import './App.css';
 
-const productItem = {
+const productObject = {
 	absorbencyOptions: [2, 4, 5],
-	imgAltText: 'Alt text',
+	imgAltText:
+		'A pair of hip-hugging panties are shown, they feature a broad, comfortable waistband with a zig-zag pattern.',
 	imgPath: 'imgPath',
 	price: 35,
 	productTitle: 'Hiphugger',
@@ -25,7 +26,7 @@ export default function App() {
 		<div className="App">
 			<ThinxHeading>Thinx Product Card</ThinxHeading>
 			<MainContent>
-				<ProductCard product={productItem} />
+				<ProductCard product={productObject} />
 			</MainContent>
 		</div>
 	);
