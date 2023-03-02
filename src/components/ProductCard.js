@@ -12,8 +12,8 @@ export default function ProductCard({ product }) {
 			/>
 			<div>
 				<span className="pc__product-type">{product.productType}</span>
-				<div className="d-flex">
-					<h3 className="pc__product-title mb-20">{product.productTitle}</h3>
+				<div className="d-flex mb-20">
+					<h3 className="pc__product-title">{product.productTitle}</h3>
 					<span className="pc__product-price">${product.price}</span>
 				</div>
 			</div>

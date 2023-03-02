@@ -20,7 +20,7 @@
 .pc__product-title {
 	flex-grow: 1;
 	font-size: 30px;
-	margin-top: 0;
+	margin: 0;
 	text-align: left;
 }
 

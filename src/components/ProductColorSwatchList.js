@@ -1,16 +1,23 @@
+import { useState } from 'react';
+
 import ProductColorSwatch from './ProductColorSwatch';
 
 export default function ProductColorSwatchList({ swatchList }) {
-	if (!swatchList || !swatchList.length) {
-		console.error(
-			'Invalid swatchList argument passed into the ProductColorSwatchList component'
-		);
-		return null;
+	const [selected, setSelected] = useState(swatchList[0] || null);
+
+	function selectSwatch(swatch) {
+		setSelected(swatch);
 	}
+
 	return (
 		<div className="text-left">
-			{swatchList.map((cs, i) => (
-				<ProductColorSwatch key={i} selected={i === 0} {...cs} />
+			{swatchList.map((sw, i) => (
+				<ProductColorSwatch
+					key={i}
+					onClick={() => selectSwatch(sw)}
+					selected={sw === selected}
+					{...sw}
+				/>
 			))}
 		</div>
 	);

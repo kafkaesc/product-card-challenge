@@ -1,5 +1,21 @@
-.App {
-	padding-top: 10%;
+.cur-auto {
+	cursor: auto;
+}
+
+.cur-noal {
+	cursor: not-allowed;
+}
+
+.cur-point {
+	cursor: pointer;
+}
+
+.cur-zin {
+	cursor: zoom-in;
+}
+
+.cur-zout {
+	cursor: zoom-out;
 }
 
 .d-b {
