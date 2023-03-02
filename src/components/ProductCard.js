@@ -1,7 +1,9 @@
 import ProductColorSwatch from './ProductColorSwatch';
 import './ProductCard.css';
 
-export default function ProductCard(product) {
+export default function ProductCard({ product }) {
+	console.log('_jhdb: product: ', product);
+	//console.log('_jhdb: product.product.price: ', product.product.price);
 	return (
 		<div className="Product-Card-Wrapper">
 			<img
@@ -10,9 +12,13 @@ export default function ProductCard(product) {
 				src={require('assets/product-image.webp')}
 			/>
 			{/* TODO: Style these to match the spec. */}
-			<span className="pc__product-type">{product.productType}</span>
-			<h3 className="pc__product-title">{product.productTitle}</h3>
-			<span className="pc__product-price"></span>
+			<div>
+				<span className="pc__product-type">{product.productType}</span>
+				<div className="d-flex">
+					<h3 className="pc__product-title">{product.productTitle}</h3>
+					<span className="pc__product-price">${product.price}</span>
+				</div>
+			</div>
 			{/* TODO: Absorbency display component here. */}
 			<ProductColorSwatch
 				ariaLabel="Swap panty color to black"

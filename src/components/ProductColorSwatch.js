@@ -4,7 +4,11 @@ export default function ProductColorSwatch({ ariaLabel, color, selected }) {
 	return (
 		<button
 			className="pc__swatch-button"
-			style={{ border: selected && 'solid 1px #000', display: 'inline-block' }}
+			style={{
+				border: selected && 'solid 2px #000',
+				display: 'inline-block',
+				padding: selected && '2px',
+			}}
 		>
 			{selected ? (
 				<i

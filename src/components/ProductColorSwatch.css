@@ -7,10 +7,6 @@
 	width: 56px;
 }
 
-.pc__swatch-button .selected {
-	border: solid 1px #000;
-}
-
 .pc__swatch {
 	display: inline-block;
 	height: 100%;

@@ -7,3 +7,21 @@
 	max-width: 576px;
 	text-align: center;
 }
+
+.pc__product-price {
+	flex: none;
+	text-align: right;
+	width: 64px;
+}
+
+.pc__product-title {
+	flex-grow: 1;
+	margin: 0;
+	text-align: left;
+}
+
+.pc__product-type {
+	display: inline-block;
+	text-align: left;
+	width: 100%;
+}
