@@ -1,6 +1,5 @@
 .App {
-	/*padding-top: 10%;*/
-	padding: 0;
+	padding-top: 10%;
 }
 
 .d-b {
@@ -13,6 +12,10 @@
 
 .d-ib {
 	display: inline-block;
+}
+
+.mb-20 {
+	margin-bottom: 20px;
 }
 
 .text-center {

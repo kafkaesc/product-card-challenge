@@ -1,10 +1,11 @@
 import MainContent from 'layout/MainContent';
-//import ThinxHeading from 'layout/ThinxHeading';
+import ThinxHeading from 'layout/ThinxHeading';
 
 import ProductCard from 'components/ProductCard';
 import './App.css';
 
 const productItem = {
+	absorbencyOptions: [2, 4, 5],
 	imgAltText: 'Alt text',
 	imgPath: 'imgPath',
 	price: 35,
@@ -22,7 +23,7 @@ const productItem = {
 export default function App() {
 	return (
 		<div className="App">
-			{/*<ThinxHeading>Thinx Product Card</ThinxHeading>*/}
+			<ThinxHeading>Thinx Product Card</ThinxHeading>
 			<MainContent>
 				<ProductCard product={productItem} />
 			</MainContent>

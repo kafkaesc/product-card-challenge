@@ -1,0 +1,10 @@
+.pc__absorbency-button {
+	background-color: transparent;
+	display: inline-block;
+	margin-right: 18px;
+	padding: 16px 25px;
+}
+
+.pc__absorbency-icon {
+	margin-right: 2px;
+}
