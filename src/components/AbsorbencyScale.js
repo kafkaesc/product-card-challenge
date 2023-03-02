@@ -14,7 +14,7 @@ export default function AbsorbencyScale({ num, selected, ...props }) {
 	return (
 		<button
 			aria-label={`Select absorbency rating of ${num}`}
-			className="pc__absorbency-button"
+			className="pc__absorbency-button cur-point"
 			style={
 				selected
 					? { border: 'solid 2px #000' }
