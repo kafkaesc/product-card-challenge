@@ -36,4 +36,4 @@ The color swatch component can be passed a hex color code and therefore is not h
 
 The absorbency component works in a similar manner except it accepts a number from 1-5 as props and will display the proper droplet indicators on the button. Any change to the `absorbencyOptions` attributes in the mock API data will be reflected on the product card as well.
 
-I tried to pay attention to accessibility for these components. The product image has descriptive alt text. The color swatch and absorbency buttons both have aria-label attributes because their content is not descriptive of the buttons' function. Both buttons respond to keyboard focus and use in addition to mouse clicks.
+I tried to pay attention to accessibility for these components. The product image has descriptive alt text. The color swatch and absorbency buttons both have aria-label attributes because their content is not descriptive of the buttons' functions. Both buttons respond to keyboard focus and use, in addition to mouse clicks.
