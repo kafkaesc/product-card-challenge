@@ -1,35 +1,35 @@
-# Product Card
+# Product Card Implementation
+
+Built by Jared Hettinger for [Thinx](https://www.thinx.com/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-> Important: Please make sure to commit often and make the messages are descriptive as possible. If the work is returned to us with only one commit, we will not be able to evaluate the work.
+## Running this project
 
-## Getting started
+Using yarn:
 
-### Install dependencies: `yarn`
+1. Navigate to the project folder
+1. Install dependencies: `yarn`
+1. Run the project: `yarn`
 
-### Start project: `yarn start`
+Using npm:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Navigate to the project folder
+1. Install dependencies: `npm install`
+1. Run the project: `npm start`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Once the project is running it can be viewed at [http://localhost:3000](http://localhost:3000) in a browser
 
-### Edit App.js
+## App.js and the Product Card
 
-The entry point for the app is App.js. You can edit this file to get started. You can also add new files to the src folder and import them in App.js.
+App.js is the entry point for the app and the focus in this project will be the `ProductCard` component located in `src/components/ProductCard.js`.
 
-## Task
+App.js also contains a `productObject` object that is passed into the ProductCard component as props. The `productObject` is a mock-up of what data might be expected from an API delivering a collection of company products. Although this project only demonstrates a single `ProductCard` it would be a simple matter to call `.map` on an array of product objects to create a screen to shop and explore various other products from Thinx.
 
-Create a project card based on the design provided. The card should match the design as closely as possible. It is *not* required that the product card be functional. The point of the task is to see how you approach the problem from a design implementation perspective. This means clicking the swatches, aborbency buttons or image does not need to do anything. However, please use semantic HTML elements where it makes sense, for example a button instead of an image even though the button does not do anything.
+There are several child components of `ProductCard`, the two most notable being `ProductColorSwatch` and `AbsorbencyScale`.
 
-### Design
+The color swatch component can be passed a hex color code and therefore is not hardcoded to display the colors from the design: any update to the `swatchList` attribute in the mock API data will be reflected on the line of color options.
 
-The design can be found in the `design` folder under the name Product-Card-Design.jpeg. You can use either one to complete the task. The product image is located in the public folder, and the Droplet SVG is located in the `src` folder.
+The absorbency component works in a similar manner except it accepts a number from 1-5 as props and will display the proper droplet indicators on the button. Any change to the `absorbencyOptions` attributes in the mock API data will be reflected on the product card as well.
 
-## Completing
-
-When you are done, please zip up and send the project back to us. Please do not include the `node_modules` folder in the zip file. You can also upload the project to a public repository on GitHub and send us the link. Please make sure to commit often and make the messages are descriptive as possible.
-
-*Important:* If the work is returned to us with only one commit, we will not be able to evaluate the work.
+I tried to pay attention to accessibility for these components. The product image has descriptive alt text. The color swatch and absorbency buttons both have aria-label attributes because their content is not descriptive of the buttons' function. Both buttons respond to keyboard focus and use in addition to mouse clicks.
