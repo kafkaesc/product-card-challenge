@@ -3,8 +3,7 @@
 }
 
 .Product-Card-Wrapper {
-	border: solid 1px #f00;
 	margin: 0 auto;
-	max-width: 400px;
+	max-width: 576px;
 	text-align: center;
 }

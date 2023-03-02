@@ -1,20 +1,26 @@
-.swatch-wrapper {
-	height: 64px;
+.pc__swatch-button {
+	background-color: transparent;
+	border: none;
+	height: 56px;
 	margin: 1px;
 	padding: 1px;
-	width: 64px;
+	width: 56px;
 }
 
-.swatch-wrapper .selected {
+.pc__swatch-button .selected {
 	border: solid 1px #000;
 }
 
-.swatch {
+.pc__swatch {
 	display: inline-block;
 	height: 100%;
 	width: 100%;
 }
 
-.swatch:hover {
+.pc__swatch-button:focus > .pc__swatch {
+	border-radius: 50%;
+}
+
+.pc__swatch:hover {
 	border-radius: 50%;
 }
