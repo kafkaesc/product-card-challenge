@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/product-card-challenge/static/css/main.fc41b847.css",
+    "main.js": "/product-card-challenge/static/js/main.a9e52f37.js",
+    "static/media/product-image.webp": "/product-card-challenge/static/media/product-image.2a8c9a876d7478d5702c.webp",
+    "static/media/EuclidSquare-Regular-WebS.woff": "/product-card-challenge/static/media/EuclidSquare-Regular-WebS.f28b70bbdd148c3e9591.woff",
+    "static/media/EuclidSquare-Medium-WebS.woff": "/product-card-challenge/static/media/EuclidSquare-Medium-WebS.ec6cad984e4a66bfbced.woff",
+    "static/media/EuclidSquare-Semibold-WebS.woff": "/product-card-challenge/static/media/EuclidSquare-Semibold-WebS.433c63f814b910153f8b.woff",
+    "static/media/EuclidSquare-Light-WebS.woff": "/product-card-challenge/static/media/EuclidSquare-Light-WebS.78762ba050636cfeab05.woff",
+    "static/media/EuclidSquare-Regular-WebS.woff2": "/product-card-challenge/static/media/EuclidSquare-Regular-WebS.4a4d39590bb4d13c9784.woff2",
+    "static/media/EuclidSquare-Medium-WebS.woff2": "/product-card-challenge/static/media/EuclidSquare-Medium-WebS.c8eec0c9f7c5c84da18e.woff2",
+    "static/media/EuclidSquare-Semibold-WebS.woff2": "/product-card-challenge/static/media/EuclidSquare-Semibold-WebS.850679c25dab7e20dc43.woff2",
+    "static/media/EuclidSquare-Light-WebS.woff2": "/product-card-challenge/static/media/EuclidSquare-Light-WebS.36bda3cff0d165c92c52.woff2",
+    "index.html": "/product-card-challenge/index.html",
+    "main.fc41b847.css.map": "/product-card-challenge/static/css/main.fc41b847.css.map",
+    "main.a9e52f37.js.map": "/product-card-challenge/static/js/main.a9e52f37.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fc41b847.css",
+    "static/js/main.a9e52f37.js"
+  ]
+}
