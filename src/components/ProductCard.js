@@ -1,9 +1,7 @@
-import ProductColorSwatch from './ProductColorSwatch';
+import ProductColorSwatchList from './ProductColorSwatchList';
 import './ProductCard.css';
 
 export default function ProductCard({ product }) {
-	console.log('_jhdb: product: ', product);
-	//console.log('_jhdb: product.product.price: ', product.product.price);
 	return (
 		<div className="Product-Card-Wrapper">
 			<img
@@ -20,27 +18,7 @@ export default function ProductCard({ product }) {
 				</div>
 			</div>
 			{/* TODO: Absorbency display component here. */}
-			<ProductColorSwatch
-				ariaLabel="Swap panty color to black"
-				color="#000"
-				selected={true}
-			/>
-			<ProductColorSwatch
-				ariaLabel="Swap panty color to bright red"
-				color="#fe0000"
-			/>
-			<ProductColorSwatch
-				ariaLabel="Swap panty color to bright blue"
-				color="#2400fe"
-			/>
-			<ProductColorSwatch
-				ariaLabel="Swap panty color to bright pink"
-				color="#ff00e6"
-			/>
-			<ProductColorSwatch
-				ariaLabel="Swap panty color to lime green]"
-				color="#90ff00"
-			/>
+			<ProductColorSwatchList swatchList={product.swatchList} />
 		</div>
 	);
 }

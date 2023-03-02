@@ -2,8 +2,9 @@
 	background-color: transparent;
 	border: none;
 	height: 56px;
-	margin: 1px;
+	margin-right: 20px;
 	padding: 1px;
+	vertical-align: top;
 	width: 56px;
 }
 
