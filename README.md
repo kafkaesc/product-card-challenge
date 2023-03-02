@@ -14,7 +14,7 @@ Using yarn:
 
 1. Navigate to the project folder
 1. Install dependencies: `yarn`
-1. Run the project: `yarn`
+1. Run the project: `yarn start`
 
 Using npm:
 
